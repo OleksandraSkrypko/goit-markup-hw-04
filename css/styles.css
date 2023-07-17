@@ -94,6 +94,7 @@ a {
     text-decoration: none;
     padding: 24px 0;
     margin-right: 76px;
+
     
 }
 
@@ -136,7 +137,9 @@ padding: 24px 0;
             padding-top: 24px;
             padding-bottom: 24px;
         
-            transition: color #404BBF;
+            color: #404bbf;
+            transition:olor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-link:active,
@@ -214,6 +217,7 @@ padding: 24px 0;
     
         flex-direction: row;
         padding: 24px 0;
+        transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
                         
 .header-networks-link:hover {
@@ -727,7 +731,10 @@ display: flex;
   |Customers
   |============================
 */
-
+.link-pt{
+    transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
 .clients-section{
 padding-top: 120px;
     padding-bottom: 120px;
@@ -770,10 +777,14 @@ height: 100%;
     fill: currentColor;
 }
 .clients-link:hover{
-    border-color: #404BBF;
+    color: #404bbf;
+}
+.clients-link:focus{
+    border-color: #404bbf;
+    color: #404bbf;
 }
 .clients-link:hover .clients-icon {
-    fill: #404BBF;
+    color: #404bbf;;
 }
 
 /**
@@ -825,11 +836,11 @@ opacity: 0;
         top: 24px;
         width: 24px;
         right: 24px;
-        padding: 0;
         height: 24px;
         background-color: #e7e9fc;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
