@@ -586,6 +586,7 @@ padding: 24px 0;
 .link-pt:hover .overlay-decription,
 .link-pt:focus .overlay-decription{
     display: block;
+    transform: translateY(0%);
 }
 .link-pt {
     display: block;
@@ -597,9 +598,8 @@ padding: 24px 0;
             transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-decription:focus{
-    transform: translateY(0%);
-}
+
+
 .main-portfolio {
     
 }
